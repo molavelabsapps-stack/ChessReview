@@ -1,0 +1,52 @@
+/* Theme Variables & Colors */
+:root {
+    /* Colors */
+    --color-bg-primary: #09090b;
+    --color-bg-secondary: #16161a;
+    --color-bg-tertiary: #27272a;
+    --color-border: #3f3f46;
+    --color-text-primary: #fafafa;
+    --color-text-secondary: #a1a1a6;
+    --color-text-muted: #71717a;
+
+    /* Accent Colors */
+    --color-brilliant: #00d9ff;
+    --color-great: #00ff88;
+    --color-good: #88ff00;
+    --color-inaccuracy: #ffaa00;
+    --color-mistake: #ff5500;
+    --color-blunder: #ff0000;
+
+    /* Board Colors */
+    --color-square-light: #e3ddc8;
+    --color-square-dark: #6b5944;
+    --color-square-highlight: rgba(0, 217, 255, 0.3);
+    --color-square-last-move: rgba(255, 255, 255, 0.2);
+
+    /* Transitions */
+    --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-base: 300ms cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-slow: 500ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    /* Shadows */
+    --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.3);
+    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.4);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.5);
+    --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.6);
+}
+
+body {
+    background-color: var(--color-bg-primary);
+    color: var(--color-text-primary);
+}
+
+/* Text Selection */
+::selection {
+    background-color: var(--color-brilliant);
+    color: var(--color-bg-primary);
+}
+
+::-moz-selection {
+    background-color: var(--color-brilliant);
+    color: var(--color-bg-primary);
+}
